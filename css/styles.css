@@ -61,13 +61,13 @@ img {
     max-width: 100%;
 }
 
+
 .container {
     width: 1200px;
     padding: 0 15px; 
-
+ 
 }
 .section {
-  
     padding-top: 94px;
     padding-bottom: 94px;
  }
@@ -99,6 +99,7 @@ img {
     width: 20px;
     height: 20px;
     fill: currentColor;
+    margin: auto;
 }
 .icons-list {
     display: inline-flex;     
@@ -110,7 +111,7 @@ img {
     width: 44px;
     height: 44px;
     display: flex;
-    align-items: center;
+    justify-content: center;
     color: var(--icon-color);
     border-radius: 50%;
     transition: fill 250ms var(--timing-function), background-color 250ms var(--timing-function);
@@ -123,15 +124,17 @@ img {
    
  }
  .feature-icon-container {
+     display: flex;
+     justify-content: center;
      width: 270px;
      height: 120px;
      background-color: var(--backgroung-team-color);
      margin-bottom: 30px;
-     display: flex;
-     align-items: center;
+     
  }
  
  .feature-icon {
+     margin: auto;
      width: 70px;
      height: 70px;
 
@@ -172,10 +175,8 @@ img {
      margin-right: 50px;
  }
 .menu a {
-    
+    margin: auto;
     padding: 32px 0;
-    
-    color: var(--text-color);
     transition: color 250ms var(--timing-function);
     
 
@@ -203,15 +204,15 @@ margin-right: auto;
  .contact a {
     
     display: flex;
-    padding: 10px 0;
-    align-items: center;
+    padding: 32px 0;
+  
     font-size: 14px;
     line-height: 16px;
     color: var(--text-color);
     transition: color 250ms var(--timing-function);
  } 
  .contacts-icon {
-     margin-right: 10px;
+     margin: auto 10px;
      fill: currentColor;
  }
  .envelope {
@@ -440,8 +441,8 @@ margin-right: auto;
 
 .clients-list a{
     display: flex;
-    align-items: center;
-    margin: 0;
+    justify-content: center;
+ 
     width: 170px;
     height: 92px;
     color: var(--icon-color);
@@ -461,31 +462,37 @@ margin-right: auto;
     width: 41px;
     height: 46.7px;
     fill: currentColor;
+    margin: auto;
 }
 .group2 {
     width: 40px;
     height: 52px;
     fill: currentColor;
+    margin: auto;
 }
 .group3 {
     width: 43.46px;
     height: 41.18px;
     fill: currentColor;
+    margin: auto;
 }
 .group4 {
     width: 84.44px;
     height: 40.62px;
     fill: currentColor;
+    margin: auto;
 }
 .group5 {
     width: 62.54px;
     height: 45.43px;
     fill: currentColor;
+    margin: auto;
 }
 .group6 {
     width: 93.79px;
     height: 43.93px;
     fill: currentColor;
+    margin: auto;
 }
 
 /*------Footer Section-------*/   
@@ -503,7 +510,8 @@ margin-right: auto;
 }
 
 .footer-item {
-    margin: 0;
+    margin-left: 0;
+    margin-right: 70px;
 }
 
 .footer li {
@@ -524,7 +532,8 @@ address {
 }
 
 .socialmedia {
-    margin-left: 82px;
+    margin-left: 0;
+    margin-right: 93px;
 }
 .socialmedia p {
     font-size: 14px;
@@ -750,7 +759,7 @@ address {
     height: 40px;
     border: 1px solid var(--modal-label-color);
     border-radius: 4px;
-    margin-bottom: 10px;
+    
     color: var(--text-color);
     padding-left: 42px;
     font-size: 14px;
@@ -873,11 +882,13 @@ address {
     font-size: 16px;
     color: var(--adress-link-color);
     vertical-align: middle;
+    margin-right: 12px;
 }
 
 .post-input:focus,
 .post-input:hover {
     color: var(--while-color);
+    
 }
 .form-footer {
     margin-right: 0;
@@ -892,13 +903,17 @@ address {
 
 .submit-post {  
     position: relative;
-    vertical-align: middle;  
+    vertical-align: middle; 
+    padding: 10px 29px; 
     height: 50px;
+    letter-spacing: 0.06em;
     background-color: var(--pretty-color);
     color: var(--while-color);
     fill: var(--while-color);
-    margin-left: 12px;
-
+}
+.submit-post:focus,
+.submit-post:hover {
+    background-color: var(--button-hover);
 }
 .send-icon {
     vertical-align: middle;
