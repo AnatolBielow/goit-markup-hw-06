@@ -21,7 +21,7 @@
 
                 <ul class="menu">
                     <li class="menu-link active">
-                        <a href="#studio" >Студия</a>
+                        <a href="./index.html" >Студия</a>
                     </li>
 
                     <li class="menu-link">
@@ -29,7 +29,7 @@
                     </li>
 
                     <li class="menu-link">
-                        <a href="#contacts">Контакты</a>
+                        <a href="#">Контакты</a>
                     </li>
                 </ul>                               
             </nav> 
@@ -332,7 +332,7 @@
         <section class="section clients">
             <div class="container">
                 <h2 class="clients-title">Постоянные клиенты</h2>
-                <ul class="card-set clients-list">
+                <ul class="clients-list">
                     <li class="item">
                         <a href="#">
                             <svg class="group1"><use href="./images/icons/sprite.svg#icon-group1"></use></svg>
@@ -373,21 +373,31 @@
         </section>
     </main>
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-container">
+            <div class="footer-item">
+                <div class="logo">
+                    <a href="#" class="web">Web<span class="studio2">Studio</span></a>
+                </div>
+
+                <address>                
             <address> 
-                <div class="logo"><a href="#" class="web">Web<span class="studio2">Studio</span></a></div>
-                <ul>
-                    <li>
-                        г. Киев, пр-т Леси Украинки, 26
-                    </li>
-                    <li class="adress-link">
-                        <a href="mailto:info@example.com">info@example.com</a>
-                    </li>
-                    <li class="adress-link">
-                        <a href="tel:+380991111111">+38 099 111 11 11</a>
-                    </li>
+                <address>                
+                    <ul>
+                        <li>
+                            г. Киев, пр-т Леси Украинки, 26
+                        </li>
+                        <li class="adress-link">
+                            <a href="mailto:info@example.com">info@example.com</a>
+                        </li>
+                        <li class="adress-link">
+                            <a href="tel:+380991111111">+38 099 111 11 11</a>
+                        </li>
+                    </ul> 
                 </ul> 
-            </address>
+                    </ul> 
+                </address>
+            </div>
+            
             <div class="socialmedia">
                 <p>присоединяйтесь</p>
                 <ul class="icons-list">
@@ -428,9 +438,25 @@
                     </li>
                 </ul>    
             </div>
-            <form>
-
-            </form>
+            <div class="form-footer">
+                <p class="post-submit-title">Подпишитесь на рассылку</p>
+                    <form>
+                        <label class="post-submit">
+                            <input type="text" name="E-mail" required class="post-input" placeholder="E-mail"/>
+                        </label>
+                        <button type="submit" class="button submit-post">Подписаться
+                           
+                                <svg class="send-icon">
+                                    <use href="./images/icons/sprite.svg#send"></use>
+                                </svg>
+                         
+                        </button>
+                    </form>                     
+                          
+                    
+            </div>
+        
+                
         </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -441,54 +467,66 @@
 
             <p class="form-tittle">Оставьте свои данные, мы вам перезвоним</p>
 
-            <ul>
-                <li>
-                    <label for="name" class="form-label">Имя</label>
-                    <input type="text" name="name" id="name" class="form-input" />
-                </li>
 
-                <li>
-                    <label for="tel" class="form-label">Телефон</label>
-                    <input type="tel" name="tel" id="tel" class="form-input" />
-                </li>
+            <label class="form-label">
+                <span class="label-name">Имя</span>
+               
+                <span class="form-label-wrap">
+                    <input type="text" name="name" required class="form-input" />
+                    <svg class="form-icon">
+                        <use href="./images/icons/sprite.svg#person"></use>
+                    </svg>
+                </span>
+                 
+            </label>           
 
-                <li>
-                    <label for="email" class="form-label">Почта</label>            
-                    <input type="email" name="email" id="email" class="form-input" />
-                </li>
+            <label class="form-label">
+                <span class="label-name">Телефон</span>
+               
+                <span class="form-label-wrap">
+                    <input type="tel" name="tel" required class="form-input" />
+                    <svg class="form-icon">
+                        <use href="./images/icons/sprite.svg#phone"></use>
+                    </svg>
+                </span>                
+            </label>
 
-                <li>
-                    <label for="comment" class="form-label">Комментарий</label>            
-                    <textarea name="comment" id="comment"  class="comment-input" placeholder="Введите текст"></textarea>  
-                </li>
-            </ul>
-            <input type="checkbox" name="policy" id="policy" class="checkbox"/>            
-            <label for="checkbox">Соглашаюсь с рассылкой и принимаю </label><a href="#">Условия договора</a>
+            <label class="form-label">
+                <span class="label-name">Почта</span>
+              
+                <span class="form-label-wrap">
+                    <input type="email" name="email" required class="form-input" />
+                    <svg class="form-icon">
+                        <use href="./images/icons/sprite.svg#email"></use>
+                    </svg>
+                </span>                 
+            </label>
 
             
+      
+            <label for="comment" class="form-label">Комментарий</label>            
+            <textarea name="comment" id="comment"  class="comment-input" placeholder="Введите текст"></textarea>  
+            
 
-<button type="submit">Wyslac</button>
+                      
+            <label for="checkbox" class="checkbox-label">
+                <input type="checkbox" name="policy" id="checkbox" required class="checkbox"/>  
+                <span class="checkbox-policy">
+                    <svg class="check"> 
+                        <use href="./images/icons/sprite.svg#check"></use>
+                    </svg>
+                </span>
+                Соглашаюсь с рассылкой и принимаю 
+            
+            <a href="#" class="accept">Условия договора</a>
+                </label>
+            
+                <div style="text-align: center;">
+                    <button type="submit" class="button submit">Отправить</button>
+                </div>
+                
         </form>
     </div>
-    <script>
-        (() => {
-
-document.querySelector('.js-speaker-form').addEventListener('submit', e => {
-
-  e.preventDefault();
-
-
-
-  new FormData(e.currentTarget).forEach((value, name) =>
-
-    console.log(`${name}: ${value}`),
-
-  );
-
-});
-
-})();
-    </script>
     <script src="./js/modal.js"></script>
     </body>
 </html>
